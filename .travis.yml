@@ -1,7 +1,4 @@
 language: bash
-deploy:
-  provider: script
-  script:
-    - ./scripts/pipeline.sh
-  on:
-    tags: true
+if: tag IS present
+script:
+  - ./scripts/pipeline.sh
