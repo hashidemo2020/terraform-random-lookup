@@ -4,7 +4,7 @@ data "terraform_remote_state" "info" {
   config {
     organization = "fidelity_tfe_demo"
     workspaces {
-      name = "ECC-core-settings"
+      name = "EEC-core-settings"
     }
   }
 }
