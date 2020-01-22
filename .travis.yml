@@ -1,3 +1,7 @@
 language: bash
-script:
-  - ./scripts/pipeline.sh
+deploy:
+  provider: script
+  script:
+    - ./scripts/pipeline.sh
+  on:
+    tags: true
