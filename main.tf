@@ -2,9 +2,9 @@
 data "terraform_remote_state" "info" {
   backend = "remote"
   config {
-    organization = "hashijit"
+    organization = "fidelity_tfe_demo"
     workspaces {
-      name = "settings"
+      name = "ECC-core-settings"
     }
   }
 }
